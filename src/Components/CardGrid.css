@@ -1,0 +1,58 @@
+.stripcard-container {
+  margin: 2em;
+  /* width: 100%; */
+}
+.stripcard__title {
+  margin-bottom: 1em;
+  color: whitesmoke;
+}
+.stripcardgrid {
+  display: grid;
+
+  /* width: 100%; */
+  gap: 2em;
+  justify-content: space-between;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+.stripcard {
+  display: flex;
+  background-color: var(--lightBlack);
+  min-width: 200px;
+  width: 100%;
+  max-width: 90%;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  transition: ease-in-out 0.4s;
+  border-radius: 8px;
+  gap: 0.8em;
+}
+.stripcard:hover {
+  background-color: #2f2f2f;
+}
+
+.stripcard__img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.stripcard__info {
+  flex: 1;
+}
+.stripcard__artist {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 0.1em;
+}
+@media screen and (max-width: 800px) {
+  .stripcardgrid {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  }
+  .stripcard__img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+}

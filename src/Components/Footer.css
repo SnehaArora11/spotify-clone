@@ -1,0 +1,100 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  height: 90px;
+  bottom: 0px;
+  background-color: var(--darkBlack);
+  padding: 0.6em;
+}
+.footer button svg {
+  font-size: 1.1rem;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+  gap: 1em;
+}
+.footer__songart {
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.footer__songname {
+  font-size: 0.9rem;
+}
+.footer__artistname {
+  font-size: 0.8rem;
+}
+.footer__left__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6em;
+}
+
+.footer__center > div {
+  flex: 1;
+  align-items: center;
+}
+.footer__music-controls {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+#play-button svg {
+  font-size: 3rem;
+}
+.footer__progressbar {
+  display: flex;
+  gap: 1em;
+}
+.footer__progressbar p {
+  font-size: 0.8rem;
+}
+
+/* right */
+.footer__right {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 0.8em;
+}
+
+.footer__right *.MuiSlider-root {
+  color: var(--lighGray);
+  border-radius: 50%;
+}
+.footer__right .MuiSlider-track {
+  height: 5px;
+  border-radius: 24px;
+  transition: ease-in-out 0.2s;
+}
+.footer__right .MuiSlider-track:hover {
+  color: var(--accentColor);
+}
+
+.footer__right .MuiSlider-thumb:hover {
+  color: var(--accentColor);
+}
+
+@media screen and (max-width: 800px) {
+  .footer__right {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer__left {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+  }
+}

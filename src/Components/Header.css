@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  background-color: var(--lightBlack);
+}
+.header__logo {
+  /* height: 2em; */
+  width: 6em;
+  object-fit: contain;
+  margin-left: 1em;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 0.6em;
+}
+.header__left {
+  z-index: 200;
+}
+.button {
+  cursor: pointer;
+}
+.header__userinfo {
+  display: flex;
+  gap: 0.6em;
+  align-items: center;
+}
+.button svg {
+  font-size: 2rem;
+}
+#menu:checked ~ .sidebar {
+  left: -200px;
+}
+.sidebar-closed {
+  left: -300px;
+}

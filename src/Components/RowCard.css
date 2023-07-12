@@ -1,0 +1,63 @@
+.row__link {
+  display: contents;
+  text-decoration: none;
+}
+
+.rowcard {
+  background-color: var(--lightBlack);
+  height: 16em;
+  min-width: 100%;
+  border-radius: 8px;
+  padding: 1em;
+  margin-right: 1.5em;
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+.rowcard:hover {
+  background-color: #2f2f2f;
+}
+
+.rowcard__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowcard__image {
+  height: 8em;
+  width: 8em;
+  align-self: center;
+  margin-bottom: 1em;
+  box-shadow: 0px 4px 20px #111;
+}
+
+.rowcard__title {
+  font-size: 1.1rem;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.rowcard__description {
+  color: var(--lightGray);
+}
+
+@media screen and (min-width: 425px) {
+  .rowcard {
+    max-width: 22em;
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rowcard {
+    max-width: 22em;
+    min-width: 20%;
+    height: 18em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .rowcard {
+    max-width: 22em;
+    min-width: 16%;
+    height: 18em;
+  }
+}

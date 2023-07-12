@@ -1,0 +1,17 @@
+.rowcardloading {
+  background-color: var(--lightBlack);
+  height: 16em;
+  min-width: 100%;
+  border-radius: 8px;
+  padding: 1em;
+  margin-right: 1.5em;
+}
+
+.rowcardloading__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowcardloading__image {
+}

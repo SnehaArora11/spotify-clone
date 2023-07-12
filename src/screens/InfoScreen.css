@@ -1,0 +1,98 @@
+.infoscreen__top {
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.infoscreen__top::after {
+  content: "";
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background-color: red;
+}
+.infoscreen__title,
+.infoscreen__description {
+  margin: 0em 30px 30px 30px;
+  text-shadow: rgba(0, 0, 0, 0.45);
+}
+.infoscreen__title {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.infoscreen__description {
+}
+.infoscreen__playbutton {
+  margin: 2em auto;
+  display: grid;
+  place-items: center;
+}
+.playbutton {
+  background-color: var(--accentColor);
+  border-radius: 100%;
+  padding: 0.5em;
+}
+.playbutton svg {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.infoscreen__songlist {
+  font-size: 0.9rem;
+}
+.songlist__table {
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+.songlist__table tr {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.songlist__table td,
+th {
+  padding: 3px 8px;
+  text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+  .infoscreen__top {
+    height: 50vh;
+  }
+  .infoscreen__title {
+    font-size: 2.6rem;
+  }
+  .infoscreen__description {
+    font-size: 1.2rem;
+  }
+  .songlist__table {
+    text-align: center;
+  }
+  .songlist__table tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .infoscreen__songlist {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .infoscreen__top {
+    height: 60vh;
+  }
+  .songlist__table tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+.row {
+  margin: 1em;
+  padding: 1em;
+}
+.row__title {
+  margin-bottom: 1em;
+  color: whitesmoke;
+}
+.row__container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.row__container::-webkit-scrollbar {
+  display: none;
+}
